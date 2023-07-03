@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia del navegador</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to bottom, #f9c6d6, #f2a0b5);
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 32px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+        
+        .button-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .back-button {
+            padding: 10px 20px;
+            background-color: #FF69B4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #FF1493;
+        }
+    </style>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</head>
+<body>
+    <h1>Historia del navegador</h1>
+    <h2>Mozilla Firefox</h2>
+    <p>
+        Mozilla Firefox es un navegador web de código abierto desarrollado por la Fundación Mozilla. Fue lanzado por primera vez en 2004 y se ha convertido en uno de los navegadores más populares del mundo. Firefox se destaca por su enfoque en la privacidad, la seguridad y las tecnologías web abiertas.
+    </p>
+    <p>
+        En cuanto al motor de renderizado, Mozilla Firefox utiliza el motor "Gecko". Gecko es un motor de renderizado de código abierto que ha sido desarrollado y mejorado por Mozilla. A lo largo de los años, Gecko ha evolucionado para ofrecer un rendimiento rápido y una correcta interpretación de los estándares web.
+    </p>
+    <p>
+        En cuanto al motor de JavaScript, Mozilla Firefox utiliza el motor "SpiderMonkey". SpiderMonkey es un motor de JavaScript de código abierto desarrollado por Mozilla. Es conocido por su rendimiento y compatibilidad con los estándares del lenguaje JavaScript.
+    </p>
+    <div class="button-container">
+        <button class="back-button" onclick="goBack()">Atrás</button>
+    </div>
+</body>
+</html>

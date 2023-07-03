@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia del navegador</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to bottom, #f9c6d6, #f2a0b5);
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 32px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+        
+        .button-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .back-button {
+            padding: 10px 20px;
+            background-color: #FF69B4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #FF1493;
+        }
+    </style>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</head>
+<body>
+    <h1>Historia del navegador</h1>
+    <h2>Opera</h2>
+    <p>
+        Opera es un navegador web desarrollado por Opera Software y lanzado en 1995. Se caracteriza por su enfoque en la velocidad, seguridad y personalización. A lo largo de los años, Opera ha evolucionado y ha introducido diversas características innovadoras, como la navegación por pestañas, el bloqueo de anuncios integrado y la sincronización de datos entre dispositivos.
+    </p>
+    <p>
+        En cuanto al motor de renderizado, Opera ha utilizado diferentes motores a lo largo de su historia. Inicialmente, utilizaba su propio motor llamado "Presto", que fue reemplazado por el motor de renderizado de código abierto "Blink" en 2013. Este cambio permitió una mejor compatibilidad con los estándares web y un rendimiento más rápido.
+    </p>
+    <p>
+        En cuanto al motor de JavaScript, Opera utiliza el motor "V8" desarrollado por Google. V8 es conocido por su rendimiento y eficiencia, lo que permite una ejecución rápida de las aplicaciones web y una experiencia de navegación fluida.
+    </p>
+    <div class="button-container">
+        <button class="back-button" onclick="goBack()">Atrás</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia del navegador</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to bottom, #f9c6d6, #f2a0b5);
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 32px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+        
+        .button-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .back-button {
+            padding: 10px 20px;
+            background-color: #FF69B4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #FF1493;
+        }
+    </style>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</head>
+<body>
+    <h1>Historia del navegador</h1>
+    <h2>Google Chrome</h2>
+    <p>
+        Google Chrome es un navegador web desarrollado por Google. Fue lanzado por primera vez en 2008 y se ha convertido en uno de los navegadores más populares en la actualidad. Chrome se destaca por su velocidad, estabilidad y compatibilidad con las últimas tecnologías web.
+    </p>
+    <p>
+        Chrome utiliza el motor de renderizado "Blink". Blink es un motor de código abierto desarrollado por Google, basado en el motor WebKit. En 2013, Google anunció su intención de utilizar Blink en lugar de WebKit, lo que dio lugar a una mayor independencia del proyecto.
+    </p>
+    <p>
+        En cuanto al motor de JavaScript, Chrome utiliza el motor "V8". V8 es un motor de JavaScript de alto rendimiento desarrollado por Google. Es conocido por su rapidez y eficiencia en la ejecución de código JavaScript, lo que contribuye a una experiencia de navegación ágil.
+    </p>
+    <div class="button-container">
+        <button class="back-button" onclick="goBack()">Atrás</button>
+    </div>
+</body>
+</html>

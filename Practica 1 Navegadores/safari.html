@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia del navegador</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to bottom, #f9c6d6, #f2a0b5);
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 32px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+        
+        .button-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .back-button {
+            padding: 10px 20px;
+            background-color: #FF69B4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #FF1493;
+        }
+    </style>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</head>
+<body>
+    <h1>Historia del navegador</h1>
+    <h2>Safari</h2>
+    <p>
+        Safari es un navegador web desarrollado por Apple Inc. Fue lanzado por primera vez en 2003 y es el navegador web predeterminado en los dispositivos Apple, incluyendo Mac, iPhone y iPad. Safari se destaca por su rendimiento, seguridad y diseño elegante.
+    </p>
+    <p>
+        Safari utiliza el motor de renderizado "WebKit". WebKit es un motor de código abierto que fue desarrollado por Apple y está basado en el motor KHTML. A lo largo del tiempo, WebKit ha evolucionado y se ha convertido en un estándar en la industria, siendo utilizado por otros navegadores además de Safari.
+    </p>
+    <p>
+        En cuanto al motor de JavaScript, Safari utiliza el motor "JavaScriptCore" (anteriormente conocido como SquirrelFish). JavaScriptCore es un motor de JavaScript de alto rendimiento desarrollado por Apple y optimizado para ofrecer una experiencia de navegación rápida y fluida.
+    </p>
+    <div class="button-container">
+        <button class="back-button" onclick="goBack()">Atrás</button>
+    </div>
+</body>
+</html>
